@@ -3,9 +3,9 @@
   hosts: n2
   become: yes
   tasks:
-    - name: Install HTTPD
+    - name: Install httpd
       yum:
-        name: HTTPD
+        name: httpd
         state: present
 
     - name: start httpd
