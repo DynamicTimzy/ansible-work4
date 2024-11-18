@@ -1,6 +1,6 @@
 ---
 - name: Deploy web app
-  hosts: n2
+  hosts: n1
   become: yes
   tasks:
     - name: Install GIT
@@ -12,10 +12,5 @@
       git:
         repo: https://github.com/CeeyIT-Solutions/ecomm-3.git  #the git repository link
         dest: /var/www/html
-
-    - name: enable httpd
-      service:
-        name: httpd 
-        enabled: yes
 ...
 
