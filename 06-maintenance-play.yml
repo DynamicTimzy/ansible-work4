@@ -6,7 +6,7 @@
   tasks:
   - name: update maintenance
     copy: 
-      src: maintenance html
+      src: maintenance.html
       dest: /var/www/html/ndex.hml
 
 ...
