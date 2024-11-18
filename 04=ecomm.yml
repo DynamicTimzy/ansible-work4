@@ -12,7 +12,6 @@
       git:
         repo: https://github.com/CeeyIT-Solutions/ecomm-3.git  #the git repository link
         dest: /var/www/html
-        
     - name: start httpd
       service:
         name: httpd
